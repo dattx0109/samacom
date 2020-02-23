@@ -1,0 +1,330 @@
+.page-banner {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  @media (max-width: 768px) {
+    height: 170px;
+  }
+  @media (min-width: 769px) {
+    height: 300px;
+  }
+  &:before {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+    opacity: 0.4;
+    z-index: 0;
+  }
+}
+.page-block {
+  background: #FFFFFF;
+  border-radius: 6px;
+  width: 100%;
+  transition: all .2s ease;
+  @media (min-width: 769px) {
+    padding: 30px;
+    &__img {
+      width: 120px;
+      margin-right: 30px;
+      float: left;
+      &--circle {
+        height: 120px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center center;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 30px;
+    .page-tag {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      z-index: 10;
+      border-radius: 4px 0px 0px 4px;
+    }
+    &__img {
+      width: 80px;
+      margin-right: 20px;
+      float: left;
+      &--circle {
+        height: 80px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center center;
+      }
+      img {
+        width: 100%;
+        height: auto !important;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 30px rgba(28, 45, 65, 0.15);
+  }
+  &--split {
+    padding: 0;
+    .page-block-top {
+      padding: 30px 30px 20px;
+      border-bottom: 1px solid #E5E9F2;
+      &.m-p-b-30 {
+        padding-bottom: 30px !important;
+      }
+    }
+    .page-block-bottom {
+      padding: 20px 30px;
+      display: inline-block;
+      width: 100%;
+      .listed-item {
+        margin-bottom: 0;
+        float: left;
+      }
+      .button-list {
+        float: right;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__desc {
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    @media (min-width: 769px) {
+      width: calc(100% - 150px);
+    }
+    &--flex {
+      display: flex;
+      flex-wrap: wrap;
+      .page-block__head {
+        padding-right: 0;
+        width: calc(100% - 285px);
+        margin-right: 30px;
+        &--full {
+          @media (max-width: 768px) {
+            width: 100% !important;
+            margin-right: 0;
+          }
+        }
+      }
+      .page-block__info {
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        @media (min-width: 769px) {
+          width: 255px;
+        }
+        label {
+          font-weight: normal;
+        }
+        .form-group {
+          width: 100%;
+          margin: 0 0 17px;
+        }
+        .page-point {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__title {
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    min-width: 100px;
+    text-transform: capitalize;
+  }
+  &__tools {
+    position: absolute;
+    @media (max-width: 768px) {
+      z-index: 10;
+      right: 0;
+      left: 0;
+      bottom: 20px;
+      justify-content: center;
+    }
+    @media (min-width: 769px) {
+      z-index: 10;
+      right: 30px;
+    }
+  }
+  &__head {
+    display: flex;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+    @media (min-width: 769px) {
+      padding-right: 160px;
+    }
+    &.display-block {
+      display: block;
+    }
+  }
+  &__head-text {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media (min-width: 769px) {
+      display: flex;
+    }
+  }
+}
+.icon-list {
+  &--green {
+    li {
+      a {
+        background: $green;
+      }
+    }
+  }
+  &--yellow {
+    li {
+      a {
+        background: $yellow;
+      }
+    }
+  }
+  &--blue {
+    li {
+      a {
+        background: $blue;
+      }
+    }
+  }
+  &--red {
+    li {
+      a {
+        background: $red;
+      }
+    }
+  }
+  li {
+    display: inline-block;
+    padding-right: 5px;
+    &:last-child {
+      padding-right: 0;
+    }
+    a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      i {
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+.display-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.detail-info-block {
+  margin-top: -150px;
+  position: relative;
+}
+.contain-link {
+  @media (max-width: 768px) {
+    div {
+      width: 100%;
+    }
+  }
+  @media (min-width: 769px) {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+      width: calc((200% - 40px)/3);
+    }
+  }
+  div {
+    margin-right: 20px;
+    line-height: 21px;
+  }
+  a {
+    display: block;
+    width: calc((100% - 20px)/3);
+    font-size: 14px;
+    line-height: 21px;
+    color: #007FF0;
+    i {
+      color: #007FF0;
+      margin-right: 8px;
+    }
+  }
+}
+.related-block {
+  @media (max-width: 768px) {
+
+  }
+  @media (min-width: 769px) {
+    display: flex;
+    flex-wrap: wrap;
+    .list-item {
+      border: 1px solid #D3DBE5;
+    }
+  }
+  .list-item {
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+      border-radius: 0;
+      border-top: 1px solid #D3DBE5;
+      &:first-child {
+        border-top: 0;
+      }
+      &:last-child {
+        border-radius: 0 0 6px 6px;
+      }
+    }
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(n+4){
+      display: none;
+    }
+  }
+  .list-text__item {
+    padding-bottom: 10px;
+    &.p-b-0 {
+      padding-bottom: 0 !important;
+    }
+  }
+}
+.page-tag-box {
+  &__item {
+    display: inline-block;
+    background: #E5E9F2;
+    border-radius: 16px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1C2D41;
+    &:last-child() {
+      margin-right: 0;
+    }
+  }
+}
+label.normal-label {
+  font-weight: normal;
+}
+
+// page-detail
+.page-detail {
+
+}

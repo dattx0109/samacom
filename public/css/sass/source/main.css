@@ -1,0 +1,443 @@
+.navbar-collapse .navbar-nav .user-login {
+  display: flex;
+  padding: 31px 10px 15px 10px;
+  color: #fff; }
+  .navbar-collapse .navbar-nav .user-login a:hover {
+    color: #1ab394; }
+
+.landing-page .navbar-scroll .navbar-nav > li > .user-login {
+  padding: 26px 10px 20px;
+  color: #676a6c; }
+
+.footer {
+  background: #3C3A3A;
+  color: #fff;
+  width: 100%;
+  position: unset; }
+  .footer a {
+    color: #fff; }
+    .footer a:hover {
+      color: #41BCA3; }
+  .footer__inner {
+    display: flex;
+    padding: 50px 0; }
+  .footer__column {
+    margin-right: 60px; }
+    .footer__column:last-child {
+      margin-right: 0; }
+    .footer__column.footer-address {
+      width: 22%; }
+    .footer__column.footer-link {
+      width: calc(56% - 120px);
+      display: flex; }
+    .footer__column.footer-app {
+      width: 20%;
+      height: 31px;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.1em; }
+  .footer__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%; }
+
+.footer-address__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 22px; }
+.footer-address__list li {
+  padding-bottom: 5px; }
+  .footer-address__list li a {
+    position: relative;
+    padding-left: 20px;
+    display: block; }
+    .footer-address__list li a i {
+      position: absolute;
+      z-index: 1;
+      top: 3px;
+      left: 0; }
+
+.footer-link__list li {
+  margin-bottom: 14px; }
+.footer-link__block {
+  margin-right: 30px; }
+  .footer-link__block:first-child {
+    width: calc((200% - 60px)/3); }
+  .footer-link__block:last-child {
+    width: calc((100% - 30px)/3);
+    margin-right: 0; }
+
+.footer-app__list li {
+  margin-bottom: 14px; }
+  .footer-app__list li a {
+    display: flex; }
+    .footer-app__list li a i {
+      font-size: 30px;
+      margin-right: 16px; }
+.footer-app__btn {
+  border-radius: 10px;
+  border-color: #fff;
+  color: #fff;
+  border: 2px solid;
+  min-width: 220px;
+  min-height: 31px;
+  padding: 4px 20px;
+  text-align: center;
+  display: block; }
+
+* {
+  font-size: 14px; }
+
+ul, li {
+  list-style-type: none;
+  padding-left: 0; }
+
+.jobDetail-container {
+  padding: 40px 0 60px;
+  background: #fff; }
+  .jobDetail-container .job-detail-info {
+    width: 100%;
+    overflow: hidden; }
+  .jobDetail-container .job-detail-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #E0E0E0; }
+
+.companyInfo {
+  display: flex;
+  position: relative; }
+  .companyInfo__Logo {
+    height: 150px;
+    width: 150px;
+    border: 2px solid #68AD9F;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-right: 40px; }
+    .companyInfo__Logo img {
+      max-width: 100%;
+      height: auto; }
+  .companyInfo__Title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #4F4F4F;
+    margin-bottom: 5px; }
+  .companyInfo__Desc {
+    margin-bottom: 10px; }
+  .companyInfo__Detail {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: 185px; }
+  .companyInfo__Wform {
+    background: #F2994A;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 118.2%;
+    color: #fff;
+    letter-spacing: 0.5px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 0;
+    padding: 12px 22px; }
+
+.link-listing li {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 5px; }
+  .link-listing li:last-child {
+    margin-right: 0; }
+  .link-listing li i {
+    color: #41BCA3;
+    font-size: 22px;
+    margin-right: 5px;
+    width: 22px; }
+  .link-listing li span, .link-listing li a {
+    color: #4F4F4F;
+    letter-spacing: 0.1em; }
+
+.detail-title {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #4F4F4F; }
+
+.detail-label {
+  font-weight: normal;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #4F4F4F;
+  margin-bottom: 20px; }
+
+.job-list-inner {
+  display: flex;
+  flex-wrap: wrap; }
+
+.jobDate {
+  display: flex; }
+  .jobDate__Item {
+    margin-right: 30px;
+    width: calc((100% - 60px)/3); }
+    .jobDate__Item:last-child {
+      margin-right: 0; }
+  .jobDate__Title {
+    margin-bottom: 5px; }
+
+.jobOverview__Item {
+  margin: 0 30px 30px 0;
+  width: calc((100% - 60px)/3);
+  display: flex; }
+  .jobOverview__Item:nth-of-type(3n) {
+    margin-right: 0; }
+.jobOverview__Icon {
+  margin-right: 10px; }
+  .jobOverview__Icon i {
+    font-size: 45px;
+    color: #41BCA3; }
+.jobOverview__Desc {
+  color: #828282; }
+
+.job-detail-content {
+  padding: 20px 0; }
+  .job-detail-content .detail-label {
+    margin-bottom: 10px; }
+
+.job-detail-sidebar {
+  padding: 20px 0; }
+
+.the-content-block p {
+  margin-bottom: 25px; }
+
+.jobApplyForm {
+  margin-bottom: 40px; }
+  .jobApplyForm__Item {
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid #2FB89C;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: all .3s ease;
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: #2FB89C;
+    padding: 5px 10px;
+    cursor: pointer; }
+    .jobApplyForm__Item:hover {
+      background: #2FB89C;
+      color: #fff; }
+    .jobApplyForm__Item:last-child {
+      marginb-bottom: 0; }
+
+.jobMatching__Block {
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  padding: 20px; }
+.jobMatching__Label {
+  margin-bottom: 20px; }
+.jobMatching__LabelInner {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 118.2%;
+  color: #4F4F4F; }
+  .jobMatching__LabelInner:first-child {
+    display: block;
+    float: left;
+    width: calc(50% - 15px);
+    margin-right: 30px; }
+.jobMatching__Item {
+  display: flex;
+  flex-wrap: wrap; }
+  .jobMatching__Item--inner {
+    width: calc(50% - 15px); }
+    .jobMatching__Item--inner:nth-of-type(2n+1) {
+      margin-right: 30px; }
+.jobMatching__Title {
+  font-weight: normal;
+  font-size: 16px;
+  color: #4F4F4F;
+  margin-bottom: 10px; }
+.jobMatching__Tag {
+  width: 100%; }
+  .jobMatching__Tag span {
+    display: block;
+    width: 100%;
+    background: #41BCA3;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin-bottom: 10px; }
+    .jobMatching__Tag span.unmatch-tag {
+      background: #BDBDBD; }
+
+.download-list__Title {
+  font-weight: 600;
+  margin-bottom: 20px; }
+.download-list__Item {
+  padding: 20px 20px 10px !important; }
+.download-list__Inner {
+  display: flex;
+  flex-wrap: wrap; }
+.download-list .form-group {
+  margin-right: 15px; }
+  .download-list .form-group:last-child {
+    margin-right: 0; }
+  .download-list .form-group .size {
+    margin-left: 10px;
+    font-weight: 600; }
+
+.form-group.flex input {
+  height: 42px;
+  line-height: 42px; }
+.form-group.flex input, .form-group.flex button {
+  display: block;
+  float: left; }
+.form-group.flex button {
+  margin-top: 10px; }
+
+.page-padding-container .ibox-title {
+  border: 0;
+  text-align: center; }
+.page-padding-container .ibox-content {
+  border: 0; }
+
+.va-container {
+  padding-: 0 30px;
+  position: relative; }
+
+.va-top {
+  width: 100%;
+  display: block;
+  padding-top: 50px; }
+  .va-top__back-link {
+    float: right;
+    color: #828282;
+    font-size: 18px;
+    line-height: 21px; }
+
+.va-inner {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 600px; }
+  .va-inner .va-form-block {
+    width: 50%;
+    padding: 50px 0; }
+    .va-inner .va-form-block .form-group {
+      position: relative;
+      overflow: hidden; }
+      .va-inner .va-form-block .form-group label {
+        font-size: 18px;
+        line-height: 21px;
+        color: #333333;
+        font-weight: 600;
+        line-height: 34px;
+        padding-right: 12px; }
+  .va-inner .va-visual {
+    width: 50%; }
+    .va-inner .va-visual__img {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      right: 0;
+      z-index: 10; }
+
+.va-form__input {
+  width: 350px;
+  max-width: 100%; }
+.va-form__label {
+  width: calc(100% - 370px);
+  margin-right: 20px; }
+.va-form__btn {
+  width: 350px;
+  margin-top: 25px; }
+.va-form__label-desc {
+  margin-bottom: 15px; }
+
+body.landing-page {
+  padding-top: 66px; }
+
+.hidden-step {
+  display: none; }
+
+.choose-tags__radio {
+  line-height: 34px;
+  min-width: 75px; }
+.choose-tags__radio-block {
+  display: flex; }
+  .choose-tags__radio-block input[type=radio] {
+    margin-right: 3px; }
+  .choose-tags__radio-block .choose-tags__block {
+    padding-left: 20px; }
+.choose-tags__block {
+  overflow: hidden; }
+.choose-tags__item {
+  display: block;
+  float: left;
+  background: #E0E0E0;
+  border-radius: 10px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  padding: 8px 20px;
+  color: #333333;
+  transition: all .2s ease;
+  cursor: pointer; }
+  .choose-tags__item:hover {
+    background: #41BCA3;
+    color: #fff; }
+
+.label-input-form {
+  display: flex;
+  margin-bottom: 12px; }
+  .label-input-form input {
+    margin-right: 12px;
+    padding: 0 12px; }
+  .label-input-form__label {
+    marin-right: 10px;
+    min-width: 90px; }
+
+#popup {
+  background: #3c3a3a;
+  color: #fff;
+  border-radius: 20px;
+  max-width: 250px;
+  transition: all .3s ease;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: translate3d(0, 0, 0); }
+  #popup.popup-active {
+    opacity: 1;
+    pointer-events: all; }
+  #popup .popup-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px; }
+    #popup .popup-inner:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-left-color: #3c3a3a;
+      border-right: 0;
+      border-bottom: 0;
+      margin-top: -10px;
+      margin-right: -20px; }
+
+/*# sourceMappingURL=main.css.map */

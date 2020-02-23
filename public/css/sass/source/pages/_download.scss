@@ -1,0 +1,189 @@
+.download-list {
+  li {
+    .form-group {
+
+    }
+  }
+  &__Title {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  &__Item {
+    padding: 20px 20px 10px !important;
+  }
+  &__Inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-group {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .size {
+      margin-left: 10px;
+      font-weight: 600;
+    }
+  }
+}
+.form-group {
+  &.flex {
+    input {
+      height: 42px;
+      line-height: 42px;
+    }
+    input, button {
+      display: block;
+      float: left;
+    }
+    button {
+      margin-top: 10px;
+    }
+  }
+}
+.page-padding-container {
+  //padding: 40px 0 0;
+  .ibox-title {
+    border: 0;
+    text-align: center;
+  }
+  .ibox-content {
+    border: 0;
+  }
+}
+.table-doc {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0;
+  @media (max-width: 768px) {
+    border: 0 !important;
+  }
+  td {
+    vertical-align: middle !important;
+    @media (max-width: 768px) {
+      max-width: 195px;
+      overflow: hidden;
+    }
+  }
+  tbody {
+    @media (max-width: 768px) {
+      th {
+        padding: 8px 8px 8px 0 !important
+      }
+    }
+    tr {
+      transition: all .2s ease;
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}
+.table-doc>thead>tr>th {
+  border-bottom: 1px solid #ddd;
+}
+.table-doc>tbody>tr>td, .table-doc>tbody>tr>th, .table-doc>tfoot>tr>td, .table-doc>tfoot>tr>th, .table-doc>thead>tr>td, .table-doc>thead>tr>th {
+  vertical-align: middle !important;
+}
+.table-list {
+  &__has-sub {
+    cursor: pointer;
+    //&:hover {
+    //  i {
+    //    color: $green;
+    //  }
+    //}
+  }
+  &__sub {
+    position: absolute;
+    bottom: -80px;
+    right: -90px;
+    border: 1px solid #D3DBE5;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    z-index: 10;
+    background: #fff;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    margin-top: -20px;
+    transition: all .3s ease;
+    li {
+      a {
+        display: flex;
+        color: #1C2D41;
+        &:hover {
+          color: $green;
+          i {
+            color: $green;
+          }
+        }
+        i {
+          color: #1C2D41;
+          margin-right: 10px;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+}
+.table-list > li {
+  display: inline-block;
+  position: relative;
+  color: #8392A5;
+  margin-right: 20px;
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  i {
+    color: #8392A5;
+  }
+  &:hover {
+    .table-list__sub {
+      opacity: 1;
+      pointer-events: all;
+      margin-top: 0;
+    }
+  }
+}
+.big-icon {
+  font-size: 30px;
+  line-height: 45px;
+  color: #0095C5;
+}
+.color-red {
+  color: $red;
+}
+.download-file {
+  cursor: pointer;
+  &:hover {
+    i {
+      color: $green;
+    }
+  }
+}
+.popup-form {
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-shadow: 0px 0px 30px rgba(28,45,65,.15);
+  @media (min-width: 769px){
+    min-width: 430px;
+  }
+  @media (max-width: 480px){
+    width: calc(100% - 30px);
+  }
+  @media (min-width: 481) and (max-width: 768px) {
+    min-width: 400px;
+  }
+}

@@ -1,0 +1,82 @@
+.login-container {
+  width: 100%;
+  background: #fff;
+  @media (max-width: 768px) {
+    min-height: 100vh;
+  }
+  @media (min-width: 769px) {
+    height: 100vh;
+  }
+}
+.login-img {
+  width: 32%;
+  float: left;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  @media (min-width: 769px) {
+    height: 100%;
+  }
+}
+.login-inner {
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 30px;
+  }
+  @media (min-width: 481px) {
+    width: 400px;
+    padding: 40px 0;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  input.form-control {
+    background: #FFFFFF;
+    border: 1px solid #D3DBE5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 21px;
+    height: 38px;
+  }
+  .button-primary {
+    width: 100%;
+  }
+  .button-register {
+    width: 100%;
+    &:hover {
+      color: #fff;
+      background: $green;
+    }
+  }
+}
+.middle-text {
+  width: 100%;
+  text-align: center;
+}
+.save-pass {
+  span {
+    padding-left: 6px;
+  }
+  a {
+    font-size: 14px;
+    line-height: 21px;
+    color: #1C2D41;
+    float: right;
+    &:hover {
+      color: $green;
+    }
+  }
+}

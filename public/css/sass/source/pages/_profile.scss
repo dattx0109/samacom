@@ -1,0 +1,27 @@
+.page-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.label-link {
+  color: #007FF0;
+  cursor: pointer;
+  &--no-input {
+    input {
+      display: none;
+    }
+    sup {
+      color: #c52f00;
+    }
+  }
+  &:hover {
+    color: #1c2d41;
+  }
+}
+.page-flex {
+  .page-block__img {
+    img {
+      height: 120px;
+      border-radius: 50%;
+    }
+  }
+}
